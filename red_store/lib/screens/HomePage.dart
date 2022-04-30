@@ -24,10 +24,10 @@ class _HomePageState extends State<HomePage> {
     return json.decode(response.body);
   }
 
-  Future deleteProducts(String productId) async {
+  Future deleteProduct(String productId) async {
     String url = "http://10.0.2.2:8000/api/products/" + productId;
 
-    var response = await http.get(Uri.parse(url));
+    var response = await http.delete(Uri.parse(url));
     return json.decode(response.body);
   }
 
@@ -130,7 +130,7 @@ class _HomePageState extends State<HomePage> {
                                                 child: Icon(Icons.edit)),
                                             GestureDetector(
                                                 onTap: () {
-                                                  deleteProducts((snapshot.data
+                                                  deleteProduct((snapshot.data
                                                                   as dynamic)[
                                                               'data'][index]['id']
                                                           .toString())

@@ -39,7 +39,7 @@ class AddProduct extends StatelessWidget {
                     controller: _nameController,
                     decoration: InputDecoration(labelText: 'Name'),
                     validator: (value) {
-                      if (value == null) {
+                      if (value == null || value.isEmpty) {
                         return 'Please enter product name';
                       }
                       return null;
@@ -51,8 +51,8 @@ class AddProduct extends StatelessWidget {
                     controller: _descriptionController,
                     decoration: InputDecoration(labelText: 'Description'),
                     validator: (value) {
-                      if (value == null) {
-                        return 'Please enter product name';
+                      if (value == null || value.isEmpty) {
+                        return 'Please enter product description';
                       }
                       return null;
                     }),
@@ -63,8 +63,8 @@ class AddProduct extends StatelessWidget {
                     controller: _imageUrlController,
                     decoration: InputDecoration(labelText: 'Image URL'),
                     validator: (value) {
-                      if (value == null) {
-                        return 'Please enter product name';
+                      if (value == null || value.isEmpty) {
+                        return 'Please enter product image url';
                       }
                       return null;
                     }),
@@ -75,8 +75,8 @@ class AddProduct extends StatelessWidget {
                     controller: _priceController,
                     decoration: InputDecoration(labelText: 'Price'),
                     validator: (value) {
-                      if (value == null) {
-                        return 'Please enter product name';
+                      if (value == null || value.isEmpty) {
+                        return 'Please enter product price';
                       }
                       return null;
                     }),
