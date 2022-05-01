@@ -39,3 +39,6 @@ Future deleteProduct(String productId) async {
   return json.decode(response.body);
 }
 ```
+
+Referensi :\
+ [Tutorial CRUD lengkap Laravel 8 + Flutter, Buat aplikasi Toko Online android dan IOS](https://youtu.be/G2oentJ5NVE)
