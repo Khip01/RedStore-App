@@ -8,7 +8,7 @@ Bahasa : Inggris
 ---
 
 Deskripsi :\
-  Berisi mengenai contoh sederhana sistem informasi Aplikasi Toko Online yang sudah saya menerapkan database dari server lokal/localhost.\
+  Berisi mengenai contoh sederhana sistem informasi Aplikasi Toko Online yang sudah saya menerapkan database dari server lokal/localhost.
 
 Perangkat yang digunakan : Windows 
 Perangkat Lunak Yang diperlukan :
