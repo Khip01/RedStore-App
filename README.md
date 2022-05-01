@@ -10,7 +10,7 @@ Bahasa : Inggris
 Deskripsi :\
   Berisi mengenai contoh sederhana sistem informasi Aplikasi Toko Online yang sudah saya menerapkan database dari server lokal/localhost.
 
-Perangkat yang digunakan : Windows\
+Sistem Operasi yang saya gunakan : Windows\
 Perangkat Lunak Yang diperlukan :
 - XAMPP
 - VSCode (with flutter plugin already installed)
