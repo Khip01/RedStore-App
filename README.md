@@ -19,19 +19,12 @@ Required Software:
 Instructions:
 - Clone this repo or download this repo.
 - The "RedStore" folder uses VSCode to run Laravel.
-- Open terminal in RedStore folder then run `php artisan serve`.
 - Folder "red_store" uses VSCode to run Flutter code.
 
 ## Create Database
 
-> To create a PhpMyAdmin database, try to go to **RedStore-App/RedStore/.env**.\
-> Then fill in the code `DB_DATABASE` and `DB_USERNAME` like this
-```env
-DB_DATABASE=RedStore
-DB_USERNAME=root
-```
-> Then create a database in PhpMyAdmin with the name **redstore**.\
-> Then open terminal in "RedStore" folder to run command `php artisan migrate`.
+> Create a database in PhpMyAdmin with the name "redstore".\
+> Then open terminal in **RedStore** folder to run command `php artisan migrate`.
 
 ## For Mac OS
 > For Mac OS users, head over to **RedStore-App/red_store/lib/screens/HomePage.dart**.
