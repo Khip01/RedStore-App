@@ -1,36 +1,48 @@
 # RedStore-App
 
+<img src="https://img.shields.io/badge/Type-App%2FAplikasi-green" alt="Type : App/Aplikasi"> <img src="https://img.shields.io/badge/-Assignment-red" alt="Assignment">
+
 ### Hello👋
 
-Tipe : App/Aplikasi {Assignment/Tugas}(Toko Online)\
-Bahasa : Inggris
+Language : English
 
 ---
 
-Deskripsi :\
-  Berisi mengenai contoh sederhana sistem informasi Aplikasi Toko Online yang sudah menerapkan database dari server lokal/localhost.
+Description :\
+  Contains a simple example of an Online Store Application information system that has implemented a database from a local server/localhost.
 
-Sistem Operasi yang saya gunakan : Windows\
-Perangkat Lunak Yang diperlukan :
+Operating system I use: Windows\
+Required Software:
 - XAMPP
 - VSCode (with flutter plugin already installed)
 
-Instruksi :
-- Clone repo ini atau unduh repo ini
-- Folder "RedStore" menggunakan VSCode untuk menjalankan Laravel.
-- Buka terminal di folder RedStore lalu jalankan `php artisan serve`.
-- Folder "red_store" menggunakan VSCode untuk menjalankan Flutter code. 
-  
-> Untuk pengguna Mac OS, pergilah menuju **RedStore-App/red_store/lib/screens/HomePage.dart**.
-> Lalu edit semua url `http://10.0.2.2:8000` menjadi `http://127.0.0.1:8000`.
+Instructions:
+- Clone this repo or download this repo.
+- The "RedStore" folder uses VSCode to run Laravel.
+- Open terminal in RedStore folder then run `php artisan serve`.
+- Folder "red_store" uses VSCode to run Flutter code.
 
-Ada pada baris kode
+## Create Database
+
+> To create a PhpMyAdmin database, try to go to **RedStore-App/RedStore/.env**.\
+> Then fill in the code `DB_DATABASE` and `DB_USERNAME` like this
+```env
+DB_DATABASE=RedStore
+DB_USERNAME=root
+```
+> Then create a database in PhpMyAdmin with the name **redstore**.\
+> Then open terminal in "RedStore" folder to run command `php artisan migrate`.
+
+## For Mac OS
+> For Mac OS users, head over to **RedStore-App/red_store/lib/screens/HomePage.dart**.
+> Then edit all urls `http://10.0.2.2:8000` to `http://127.0.0.1:8000`.
+
+It's on the line of code
 ```dart
 class _HomePageState extends State<HomePage> {
  final String url = 'http://10.0.2.2:8000/api/products';
 ```
-dan 
-
+and 
 ```dart
 Future deleteProduct(String productId) async {
   String url = "http://10.0.2.2:8000/api/products/" + productId;
@@ -42,5 +54,5 @@ Future deleteProduct(String productId) async {
 
 ---
 
-Referensi :\
+Reference :\
  [Tutorial CRUD lengkap Laravel 8 + Flutter, Buat aplikasi Toko Online android dan IOS](https://youtu.be/G2oentJ5NVE)
